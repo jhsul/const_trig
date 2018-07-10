@@ -38,7 +38,7 @@ int main(int argc, char *argv[])
             var::value, ct::tan<var, DEPTH>::value);
 }
 ```
-Running this should ouput:
+Running this should yield:
 ```sh
 $ g++ example.cpp -o example.out
 $ ./example.out
