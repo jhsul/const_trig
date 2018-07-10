@@ -26,7 +26,25 @@ const long double var::value = M_PI / 4;
 With these in mind, accessing the values of the functions looks like this:
 ```C++ 
 #define DEPTH 8
-
-const long double ans = ct::sin<var, DEPTH>::value;
+/*
+...
+*/
+int main(int argc, char *argv[])
+{
+    printf("var = %Lf\n", var::value);
+    printf("sin(%Lf) = %Lf\ncos(%Lf) = %Lf\ntan(%Lf) = %Lf\n",
+            var::value, ct::sin<var, DEPTH>::value,
+            var::value, ct::cos<var, DEPTH>::value,
+            var::value, ct::tan<var, DEPTH>::value);
+}
+```
+Running this should ouput:
+```sh
+$ g++ example.cpp -o example.out
+$ ./example.out
+var = 0.785398
+sin(0.785398) = 0.707107
+cos(0.785398) = 0.707107
+tan(0.785398) = 1.000000
 ```
 
