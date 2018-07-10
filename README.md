@@ -4,7 +4,7 @@ This header-only library recursively computes the Taylor Series expansions for s
 
 ![alt text](images/taylor_series.png)
 
-*Note:* This is deprecated with [constexpr](https://msdn.microsoft.com/en-us/library/dn956974.aspx) starting in C++11.
+**Note:** This is deprecated with [constexpr](https://msdn.microsoft.com/en-us/library/dn956974.aspx) starting in C++11.
 
 ## Usage
 
